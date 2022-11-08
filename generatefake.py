@@ -1,4 +1,5 @@
 from faker import Faker
+from typing import Literal
 import random
 import csv
 import json
