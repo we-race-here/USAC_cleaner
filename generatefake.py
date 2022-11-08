@@ -15,7 +15,10 @@ def generate(rows: int = 50, export: str['csv', 'json'] = 'csv', filename: str =
                'category': random.choice(['CAT5', 'CAT3', 'MM60'])}
         data.append(per)
     if export=='csv':
-        csv.DictWriter(open(f"{filename}.csv", 'w'), data[0].keys()).writerows(data)
+        with open(f"{filename}.csv", 'w') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=data[0].keys())
+            writer.writeheader()
+            writer.writerows(data)
     elif export=='json':
         with open(f"{filename}.json", "w") as final:
             json.dump(data, final)
