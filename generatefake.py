@@ -3,7 +3,7 @@ import random
 import csv
 import json
 
-def generate(rows: int = 50, export: str['csv', 'json'] = 'csv', filename: str = 'clean'):
+def generate(rows: int = 50, export: Literal['csv', 'json'] = 'csv', filename: str = 'clean'):
     """Generates fake registration or member data
     exports as csv or json"""
     fake = Faker()
