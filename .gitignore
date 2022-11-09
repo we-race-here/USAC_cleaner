@@ -1,2 +1,8 @@
 .idea
 testdata/.ipynb_checkpoints
+tests/testdata/usac_master.csv
+*/.DS_Store
+.DS_Store
+tests/.ipynb_checkpoints
+__pycache__
+notebooks
