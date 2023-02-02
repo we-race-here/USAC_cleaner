@@ -1,4 +1,7 @@
 faker
 pandas
 openpyxl
-python-Levenshtein
+levenshtein
+requests
+thefuzz
+# uszipcode
